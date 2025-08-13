@@ -10,8 +10,5 @@ public class Humain {
         this.prenom = prenom;
         this.age = age;
     }
-    @Override
-    public String toString() {
-        return nom + " " + prenom + " (" + age + " ans)";
-    }
+   
 }
