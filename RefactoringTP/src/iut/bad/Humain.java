@@ -24,8 +24,14 @@ public class Humain implements Consommation{
     public void boire() {
         System.out.println(nom + " boit.");
     }
-    public void ami(Humain h) {
-        System.out.println(nom + " est ami avec " + h.nom);
+    public void ami(Humain h, int dureeJours) {
+        System.out.println(nom + " est ami avec " + h.nom + " depuis " + dureeJours + " jours");
     }
+
+    // Surcharge avec valeur par défaut (100 jours)
+    public void ami(Humain h) {
+        ami(h, 100);
+    }
+
 
 }
